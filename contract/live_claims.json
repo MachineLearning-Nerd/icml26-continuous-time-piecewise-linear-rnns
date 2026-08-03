@@ -1,0 +1,37 @@
+{
+  "claim_precedence": "claims_anchored.json replaces claims.json",
+  "live_snapshot": "outputs/live/20260803T103038Z",
+  "paper": {
+    "orid": "JuaulCZ7gE",
+    "submission_number": 12135,
+    "title": "Continuous-Time Piecewise-Linear Recurrent Neural Networks",
+    "area": "General Machine Learning",
+    "subarea": "Sequential Network And Time Series Modeling",
+    "openreview": "https://openreview.net/forum?id=JuaulCZ7gE",
+    "arxiv": "2602.15649",
+    "claims": [
+      {
+        "text": "The continuous-time PLRNN formulation (Equation 5, Section 3.1) solves the piecewise-linear ODE analytically within each of the 2^P linear subregions by tracking switching times between regions, bypassing numerical integration entirely (Section 3.1, Equation 5).",
+        "status": "unverified"
+      },
+      {
+        "text": "Equilibria and limit cycles of trained cPLRNNs are determined semi-analytically per region using a SCYFI-style fixed-point search and the trajectory-tracking equations 14-16 (Section 3.2).",
+        "status": "unverified"
+      },
+      {
+        "text": "On irregularly-sampled leaky integrate-and-fire (LIF) data, the standard discrete-time PLRNN fails badly with D_stsp=4.3\u00b10.3, while the cPLRNN reconstructs the attractor accurately with D_stsp=0.26\u00b10.03 (Table 3).",
+        "status": "unverified"
+      },
+      {
+        "text": "cPLRNN trains roughly 4-5x faster than Neural ODE baselines using RK4 or Tsit5 solvers while matching their reconstruction performance (Table 2).",
+        "status": "unverified"
+      },
+      {
+        "text": "On real neuronal recordings, cPLRNN attains D_stsp=0.71\u00b10.02, slightly outperforming Neural ODE competitors on the same benchmark (Table 4).",
+        "status": "unverified"
+      }
+    ],
+    "claim_count": 5,
+    "max_points": 10
+  }
+}

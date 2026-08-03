@@ -1,0 +1,38 @@
+{
+  "method": "source-inspired 1D regionwise analytic switching fixture",
+  "switch_time": 0.5,
+  "rows": [
+    {
+      "t": 0,
+      "exact": 2,
+      "euler": 2.0,
+      "abs_error": 0.0
+    },
+    {
+      "t": 0.25,
+      "exact": 1.5,
+      "euler": 1.5000000000022755,
+      "abs_error": 2.275513111271721e-12
+    },
+    {
+      "t": 0.5,
+      "exact": 1.0,
+      "euler": 1.000000000004551,
+      "abs_error": 4.551026222543442e-12
+    },
+    {
+      "t": 0.75,
+      "exact": 0.5576015661428098,
+      "euler": 0.5575996191326283,
+      "abs_error": 1.947010181413411e-06
+    },
+    {
+      "t": 1.0,
+      "exact": 0.21306131942526685,
+      "euler": 0.2130582867582957,
+      "abs_error": 3.0326669711588927e-06
+    }
+  ],
+  "verdict": "toy",
+  "scope": "Exact scalar piecewise-linear ODE trajectory and switching time; not a trained cPLRNN or benchmark reproduction."
+}

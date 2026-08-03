@@ -1,1 +1,41 @@
-{"schema_version":1,"openreview_id":"JuaulCZ7gE","phase":"claim_1_attempt_1_piecewise_switching_toy_complete","next_action":"independent_review_claim_1_toy_then_claim_2_source_audit","active_run_ids":[],"completed_milestones":["live_duplicate_gate","live_contract_saved","source_archive_and_pdf_pinned","claim_1_source_cpu_feasibility_audit","claim_1_attempt_1_piecewise_switching_toy"],"failed_attempts":[],"claim_attempt_counts":{"1":1,"2":0,"3":0,"4":0,"5":0},"last_checkpoint":"2026-08-03T10:30:38Z","last_known_git_commit":null,"publication_allowed":false,"compute_policy":"local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute","claim_1_outcome":{"verdict":"toy","scope":"1D analytical piecewise-linear switching trajectory; not trained model/benchmark evidence.","evidence":"outputs/claim1_switching_toy/summary.json"}}
+{
+  "schema_version": 1,
+  "openreview_id": "JuaulCZ7gE",
+  "phase": "claim_2_attempt_1_scyfi_fixedpoint_toy_complete",
+  "next_action": "independent_review_claim_2_toy_against_literal_equilibria_and_limit_cycles_claim",
+  "active_run_ids": [],
+  "completed_milestones": [
+    "live_duplicate_gate",
+    "live_contract_saved",
+    "source_archive_and_pdf_pinned",
+    "claim_1_source_cpu_feasibility_audit",
+    "claim_1_attempt_1_piecewise_switching_toy",
+    "claim_2_attempt_1_scyfi_fixedpoint_toy"
+  ],
+  "failed_attempts": [],
+  "claim_attempt_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "last_checkpoint": "2026-08-03T14:30:00Z",
+  "last_known_git_commit": null,
+  "publication_allowed": false,
+  "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "claim_1_outcome": {
+    "verdict": "toy",
+    "scope": "1D analytical piecewise-linear switching trajectory; not trained model/benchmark evidence.",
+    "evidence": "outputs/claim1_switching_toy/summary.json"
+  },
+  "claim_2_outcome": {
+    "verdict": "toy",
+    "scope": "Deterministic 1-D regional virtual-fixed-point enumeration. It does not reproduce trained cPLRNN equilibria/limit cycles or trajectory tracking equations 14-16.",
+    "evidence": [
+      "outputs/claim2_scyfi_fixedpoint_toy/PROTOCOL.md",
+      "outputs/claim2_scyfi_fixedpoint_toy/summary.json",
+      "outputs/claim2_scyfi_fixedpoint_toy/SHA256SUMS"
+    ]
+  }
+}

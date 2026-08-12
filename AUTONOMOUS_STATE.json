@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "openreview_id": "JuaulCZ7gE",
+  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-continuous-time-piecewise-linear-rnns",
   "phase": "claim_2_attempt_1_scyfi_fixedpoint_toy_complete",
   "next_action": "independent_review_claim_2_toy_against_literal_equilibria_and_limit_cycles_claim",
   "active_run_ids": [],

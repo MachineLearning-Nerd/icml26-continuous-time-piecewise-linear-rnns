@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MachineLearning-Nerd/icml26-continuous-time-piecewise-linear-rnns",
+  "scope": "All tracked files except AUTONOMOUS_STATE.json and EVIDENCE_MANIFEST.json",
+  "entries": [
+    {
+      "path": ".gitignore",
+      "bytes": 51,
+      "sha256": "0aa06bebf4bd8a9899e4b84390735fc85cac06e95cdced608c1cf2cd9004ffbd"
+    },
+    {
+      "path": "AUTHOR_THANK_YOU.md",
+      "bytes": 562,
+      "sha256": "19cb4e297e40c56d478350df33d65bb8e5d5e78b87989fd0f6cbdd3fa59083c2"
+    },
+    {
+      "path": "BRANCH_AUDIT.md",
+      "bytes": 1043,
+      "sha256": "52dc4ece5d98fadb0b4569d75195b7c3e2169c60aad77d1866fd193f55d93719"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 1219,
+      "sha256": "9628e2367d80abc7e1b3f464b16aacf4434486c62f786f6c103b65c93ac44be0"
+    },
+    {
+      "path": "CLAIM_EVIDENCE.md",
+      "bytes": 6520,
+      "sha256": "e9b89caf16b71d21998efc276eb0fe59ad39c8418f89c3eb4311f64e263c1eae"
+    },
+    {
+      "path": "ENVIRONMENT.md",
+      "bytes": 1038,
+      "sha256": "ba372b72487ee478e434b9f37c6e2b321f16aa121675d14762449ff0a2f566c5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11212,
+      "sha256": "294e7016d046895661782042039d17c318b636158edccceba9de32959891dedc"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 2153,
+      "sha256": "4e741494c8f168130abbc992c1f274f49c13c71355feada0d970c0169814660c"
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "bytes": 2991,
+      "sha256": "4eb1979fe30f157bf05bd0301d3f52a37478d6721a7399090ff23e23913e79ed"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 2012,
+      "sha256": "1ccb1f0d60aa379018c77d9db3626a1046d6a31e50202352b94374055baab928"
+    },
+    {
+      "path": "branch-audit.md",
+      "bytes": 178,
+      "sha256": "e43e0cb9f33bf0c1732052ab6b5a697d8d202436be273ba522ad3fd45f662da4"
+    },
+    {
+      "path": "claims.json",
+      "bytes": 3762,
+      "sha256": "619eb529bcf049ecea04a063d939f30037729a2262648e5e2952fc68fe191e6e"
+    },
+    {
+      "path": "contract/live_claims.json",
+      "bytes": 1834,
+      "sha256": "6c0ca3f92e4e413f943e6de3361a1e75e6a3a132a727e23a2ad72a1233133dcd"
+    },
+    {
+      "path": "evidence/source/SHA256SUMS",
+      "bytes": 184,
+      "sha256": "0107707c8835cca249e42f6df5053e24584c370d7d51fd8042f84cc4dbfd7b34"
+    },
+    {
+      "path": "evidence/source/arxiv-2602.15649-source.tar.gz",
+      "bytes": 1581625,
+      "sha256": "4143727b13cd80fe632e96e9ab432f1d344221589cd834b8aa0316252ff58acd"
+    },
+    {
+      "path": "evidence/source/arxiv-2602.15649.pdf",
+      "bytes": 1878818,
+      "sha256": "c30f6f0fbd3eabde8d3124c4965b7d89cb4c20445bc3f671e2e9955f5cb0624c"
+    },
+    {
+      "path": "logbook/claim-2.md",
+      "bytes": 366,
+      "sha256": "0db20121516997531a032bed866a99b343a385ba8fac10031f1ee03ea05124ac"
+    },
+    {
+      "path": "outputs/claim1_switching_toy/SHA256SUMS",
+      "bytes": 108,
+      "sha256": "90cc4f6155104326b5cc45de9dc71b856b092a71d9a14dc614bb8f33fe35deac"
+    },
+    {
+      "path": "outputs/claim1_switching_toy/summary.json",
+      "bytes": 881,
+      "sha256": "a6f3738cf8ff443b722d5ef62ed347fa2d7c66131a4e9c9c0690fb9c62ec418d"
+    },
+    {
+      "path": "outputs/claim2_scyfi_fixedpoint_toy/PROTOCOL.md",
+      "bytes": 117,
+      "sha256": "a8c2ab0c9a4c0807aee6561f24a891b569ead4e43215cd9aa272b2b2402117a3"
+    },
+    {
+      "path": "outputs/claim2_scyfi_fixedpoint_toy/SHA256SUMS",
+      "bytes": 157,
+      "sha256": "04ca75a47442e5c3aa9bd1cfd1ee0f56f6460259c5471d0e1840ebce88749bc7"
+    },
+    {
+      "path": "outputs/claim2_scyfi_fixedpoint_toy/summary.json",
+      "bytes": 682,
+      "sha256": "2438e27795eb7609681c1e20dee8fbf783e8a0e4af0ffff1dbcdbe88b40c667e"
+    },
+    {
+      "path": "src/claim1_switching_toy.py",
+      "bytes": 809,
+      "sha256": "7c0ca1379840321be52b834c53d2e7171356c6e7f2711ae23530d85bb39667ef"
+    },
+    {
+      "path": "src/claim2_scyfi_fixedpoint_toy.py",
+      "bytes": 1348,
+      "sha256": "f466d08afdf61ac07fd9932b061bd65db7788994794273d56a73f7b3b3ff3148"
+    },
+    {
+      "path": "tests/test_claim1.py",
+      "bytes": 169,
+      "sha256": "31089038de5bab3100119816dca778622bf507520c00664426acff6661c5bc59"
+    },
+    {
+      "path": "tests/test_claim2.py",
+      "bytes": 331,
+      "sha256": "2f4bcfccd5f3756d7ba041c0b0eaef2388a429e5123a191154389a35fcf4ffa2"
+    },
+    {
+      "path": "verify_final.py",
+      "bytes": 7980,
+      "sha256": "3e1cc507d2c766113944f2c994c142235ed70d2af5130894ed37af505225a4fc"
+    }
+  ]
+}

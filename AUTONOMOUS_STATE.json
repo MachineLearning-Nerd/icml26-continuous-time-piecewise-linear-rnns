@@ -1,9 +1,11 @@
 {
   "schema_version": 1,
   "openreview_id": "JuaulCZ7gE",
+  "paper_title": "Continuous-Time Piecewise-Linear Recurrent Neural Networks",
   "github_repository": "https://github.com/MachineLearning-Nerd/icml26-continuous-time-piecewise-linear-rnns",
-  "phase": "claim_2_attempt_1_scyfi_fixedpoint_toy_complete",
-  "next_action": "independent_review_claim_2_toy_against_literal_equilibria_and_limit_cycles_claim",
+  "former_github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-JuaulCZ7gE-continuous-time-piecewise-linear-rnns",
+  "phase": "published_and_verified",
+  "next_action": "select_next_icml_repository",
   "active_run_ids": [],
   "completed_milestones": [
     "live_duplicate_gate",
@@ -11,7 +13,11 @@
     "source_archive_and_pdf_pinned",
     "claim_1_source_cpu_feasibility_audit",
     "claim_1_attempt_1_piecewise_switching_toy",
-    "claim_2_attempt_1_scyfi_fixedpoint_toy"
+    "claim_2_attempt_1_scyfi_fixedpoint_toy",
+    "repository_and_branch_normalization",
+    "standardized_dossier_published",
+    "dossier_manifest_and_final_verifier",
+    "fresh_clone_verification"
   ],
   "failed_attempts": [],
   "claim_attempt_counts": {
@@ -21,22 +27,63 @@
     "4": 0,
     "5": 0
   },
-  "last_checkpoint": "2026-08-03T14:30:00Z",
-  "last_known_git_commit": null,
+  "claim_statuses": {
+    "C1": "TOY_SOURCE_SWITCHING",
+    "C2": "TOY_SOURCE_REGIONAL_FIXED_POINT",
+    "C3": "UNVERIFIED",
+    "C4": "UNVERIFIED",
+    "C5": "UNVERIFIED"
+  },
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
+  "branch_set": [
+    "main"
+  ],
+  "last_known_git_commit": "a51e48ec15c5004dbf9f3e2efc5ee227a7214db4",
   "claim_1_outcome": {
-    "verdict": "toy",
-    "scope": "1D analytical piecewise-linear switching trajectory; not trained model/benchmark evidence.",
-    "evidence": "outputs/claim1_switching_toy/summary.json"
+    "verdict": "TOY_SOURCE_SWITCHING",
+    "scope": "Exact scalar piecewise-linear ODE trajectory and switching time; not a trained cPLRNN or benchmark reproduction.",
+    "evidence": [
+      "src/claim1_switching_toy.py",
+      "outputs/claim1_switching_toy/summary.json",
+      "outputs/claim1_switching_toy/SHA256SUMS"
+    ]
   },
   "claim_2_outcome": {
-    "verdict": "toy",
-    "scope": "Deterministic 1-D regional virtual-fixed-point enumeration. It does not reproduce trained cPLRNN equilibria/limit cycles or trajectory tracking equations 14-16.",
+    "verdict": "TOY_SOURCE_REGIONAL_FIXED_POINT",
+    "scope": "Deterministic one-dimensional regional virtual-fixed-point enumeration; not trained cPLRNN equilibria, limit cycles, or trajectory tracking.",
     "evidence": [
+      "src/claim2_scyfi_fixedpoint_toy.py",
       "outputs/claim2_scyfi_fixedpoint_toy/PROTOCOL.md",
       "outputs/claim2_scyfi_fixedpoint_toy/summary.json",
       "outputs/claim2_scyfi_fixedpoint_toy/SHA256SUMS"
     ]
-  }
+  },
+  "claim_3_outcome": {
+    "verdict": "UNVERIFIED",
+    "scope": "The irregular LIF benchmark table is source-pinned, but data, models, checkpoints, generated traces, and metric calculations are absent.",
+    "evidence": [
+      "CLAIM_EVIDENCE.md",
+      "evidence/source/arxiv-2602.15649.pdf",
+      "evidence/source/arxiv-2602.15649-source.tar.gz"
+    ]
+  },
+  "claim_4_outcome": {
+    "verdict": "UNVERIFIED",
+    "scope": "The runtime comparison is source-pinned, but no local cPLRNN or Neural ODE training runs or timing logs are present.",
+    "evidence": [
+      "CLAIM_EVIDENCE.md",
+      "evidence/source/arxiv-2602.15649-source.tar.gz"
+    ]
+  },
+  "claim_5_outcome": {
+    "verdict": "UNVERIFIED",
+    "scope": "The membrane-potential benchmark is source-pinned, but the recording, delay embedding, trained models, and metric outputs are absent.",
+    "evidence": [
+      "CLAIM_EVIDENCE.md",
+      "evidence/source/arxiv-2602.15649-source.tar.gz"
+    ]
+  },
+  "last_checkpoint": "2026-08-17T00:00:00Z"
 }

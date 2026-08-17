@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "name": "icml26-continuous-time-piecewise-linear-rnns",
+    "url": "https://github.com/MachineLearning-Nerd/icml26-continuous-time-piecewise-linear-rnns",
+    "former_name": "icml26-repro-JuaulCZ7gE-continuous-time-piecewise-linear-rnns"
+  },
+  "paper": {
+    "title": "Continuous-Time Piecewise-Linear Recurrent Neural Networks",
+    "authors": [
+      "Alena Brändle",
+      "Lukas Eisenmann",
+      "Florian Götz",
+      "Daniel Durstewitz"
+    ],
+    "arxiv": "2602.15649v1",
+    "openreview": "JuaulCZ7gE"
+  },
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
+  "publication_allowed": false,
+  "claims": [
+    {
+      "id": "C1",
+      "contract_text": "The continuous-time PLRNN formulation (Equation 5, Section 3.1) solves the piecewise-linear ODE analytically within each of the 2^P linear subregions by tracking switching times between regions, bypassing numerical integration entirely (Section 3.1, Equation 5).",
+      "status": "TOY_SOURCE_SWITCHING",
+      "evidence": [
+        "CLAIM_EVIDENCE.md",
+        "src/claim1_switching_toy.py",
+        "outputs/claim1_switching_toy/summary.json",
+        "outputs/claim1_switching_toy/SHA256SUMS"
+      ],
+      "boundary": "One-dimensional source-inspired regional trajectory and switch only; no cPLRNN matrix solution, interval root finder, implicit-gradient training, or benchmark."
+    },
+    {
+      "id": "C2",
+      "contract_text": "Equilibria and limit cycles of trained cPLRNNs are determined semi-analytically per region using a SCYFI-style fixed-point search and the trajectory-tracking equations 14-16 (Section 3.2).",
+      "status": "TOY_SOURCE_REGIONAL_FIXED_POINT",
+      "evidence": [
+        "CLAIM_EVIDENCE.md",
+        "src/claim2_scyfi_fixedpoint_toy.py",
+        "outputs/claim2_scyfi_fixedpoint_toy/PROTOCOL.md",
+        "outputs/claim2_scyfi_fixedpoint_toy/summary.json",
+        "outputs/claim2_scyfi_fixedpoint_toy/SHA256SUMS"
+      ],
+      "boundary": "One-dimensional regional fixed-point enumeration only; no trained model, limit-cycle solve, or trajectory-tracking reproduction."
+    },
+    {
+      "id": "C3",
+      "contract_text": "On irregularly-sampled leaky integrate-and-fire (LIF) data, the standard discrete-time PLRNN fails badly with D_stsp=4.3±0.3, while the cPLRNN reconstructs the attractor accurately with D_stsp=0.26±0.03 (Table 3).",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "CLAIM_EVIDENCE.md",
+        "SOURCE_AUDIT.md",
+        "evidence/source/arxiv-2602.15649.pdf",
+        "evidence/source/arxiv-2602.15649-source.tar.gz"
+      ],
+      "boundary": "Paper table and protocol are pinned; LIF data, trained models, traces, and metric outputs are absent."
+    },
+    {
+      "id": "C4",
+      "contract_text": "cPLRNN trains roughly 4-5x faster than Neural ODE baselines using RK4 or Tsit5 solvers while matching their reconstruction performance (Table 2).",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "CLAIM_EVIDENCE.md",
+        "SOURCE_AUDIT.md",
+        "evidence/source/arxiv-2602.15649-source.tar.gz"
+      ],
+      "boundary": "Paper timing table is pinned; no local training, timing, or matched-quality logs are present."
+    },
+    {
+      "id": "C5",
+      "contract_text": "On real neuronal recordings, cPLRNN attains D_stsp=0.71±0.02, slightly outperforming Neural ODE competitors on the same benchmark (Table 4).",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "CLAIM_EVIDENCE.md",
+        "SOURCE_AUDIT.md",
+        "evidence/source/arxiv-2602.15649-source.tar.gz"
+      ],
+      "boundary": "Paper table and metric definition are pinned; recording, embedding, trained models, and metric outputs are absent."
+    }
+  ]
+}

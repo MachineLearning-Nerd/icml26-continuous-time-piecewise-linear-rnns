@@ -1,8 +1,10 @@
 # Continuous-Time PLRNNs: Source-Pinned ICML 2026 Reproduction Audit
 
+Repository identity: MachineLearning-Nerd/icml26-continuous-time-piecewise-linear-rnns. The former repository name was icml26-repro-JuaulCZ7gE-continuous-time-piecewise-linear-rnns.
+
 This repository is a claim-by-claim audit of **“Continuous-Time Piecewise-Linear Recurrent Neural Networks.”** It pins the paper’s arXiv `v1` PDF/source, explains how the cPLRNN method and benchmark claims are produced, and records two bounded one-dimensional toys. The local toys are deliberately labeled as toys: this repository does not contain the paper’s trained cPLRNN implementation, datasets, checkpoints, benchmark logs, or a full end-to-end reproduction.
 
-> **Current status:** Claim 1 has a **source-inspired scalar switching toy**. Claim 2 has a **deterministic scalar regional fixed-point toy**. Claims 3–5 and the paper’s trained-model results remain **unverified locally**.
+> **Current status:** published source-pinned audit with verdict **INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY**. Claim 1 has a **source-inspired scalar switching toy**. Claim 2 has a **deterministic scalar regional fixed-point toy**. Claims 3–5 and the paper’s trained-model results remain **unverified locally**.
 
 ## Paper and resources
 
@@ -81,6 +83,10 @@ The authoritative claim text is preserved in `contract/live_claims.json`. The ta
 ### Toy evidence boundary
 
 The two local programs preserve only small structural components of Claims 1 and 2. They do not establish the paper’s performance, training speed, irregular-time handling, attractor statistics, topological analysis of trained models, or comparison tables. A paper-reported number remains paper-reported until the required data, model, protocol, logs, and metric calculation are independently available.
+
+## Final verification
+
+Run python3 verify_final.py from the repository root. The verifier checks the canonical repository URL, the single main branch, MachineLearning-Nerd attribution on reachable commits, source/output hashes, toy summaries, claim-status alignment, and the tracked evidence manifest.
 
 ## Reproduce the current local evidence
 

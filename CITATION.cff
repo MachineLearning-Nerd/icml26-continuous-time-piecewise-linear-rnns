@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this audit, please cite the original paper and this repository."
+title: "Continuous-Time Piecewise-Linear Recurrent Neural Networks — ICML 2026 scoped audit"
+type: software
+authors:
+  - given-names: Alena
+    family-names: Brändle
+  - given-names: Lukas
+    family-names: Eisenmann
+  - given-names: Florian
+    family-names: Götz
+  - given-names: Daniel
+    family-names: Durstewitz
+url: https://arxiv.org/abs/2602.15649
+repository-code: https://github.com/MachineLearning-Nerd/icml26-continuous-time-piecewise-linear-rnns
+keywords:
+  - continuous-time PLRNN
+  - dynamical-systems reconstruction
+  - piecewise-linear recurrent neural networks
+  - switching times
+  - ICML 2026
+identifiers:
+  - type: arxiv
+    value: "2602.15649"
+    description: "Canonical arXiv record for the paper"
+preferred-citation:
+  type: article
+  title: "Continuous-Time Piecewise-Linear Recurrent Neural Networks"
+  authors:
+    - given-names: Alena
+      family-names: Brändle
+    - given-names: Lukas
+      family-names: Eisenmann
+    - given-names: Florian
+      family-names: Götz
+    - given-names: Daniel
+      family-names: Durstewitz
+  year: 2026
+  url: https://arxiv.org/abs/2602.15649
